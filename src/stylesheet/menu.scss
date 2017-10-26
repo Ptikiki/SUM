@@ -1,0 +1,65 @@
+.js-menu {
+    position : absolute;
+    opacity: 0;
+    right : 2vw;
+ }
+
+.js-menu .icone img {
+	width : 30px;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
+#icone2 img {
+	width : 25px;
+}
+
+.js-menu ul {
+	list-style : none;
+	text-align : center;
+}
+
+#path {
+	position : absolute;
+	background-color : white;
+	width : 1.35px;
+	height : 0px;
+	right : 15px;
+}
+
+.js-timeline-position {
+	position : absolute;
+	opacity : 0;
+    top: 0px;
+    display : block;
+	background-color : white;
+	width : 10px;
+	height : 10px;
+	border-radius : 50%;
+}
+
+#timeline a {
+	color : white;
+	text-decoration : none;
+	right : 40px;
+	font-size : 0.8vw;
+	font-family : westeindeCaptionThin;
+}
+
+.epreuveID {
+	font-family : westeindeCaptionBold;
+}
+
+#epreuves {
+	right : 0;
+	opacity : 0;
+	position : absolute;
+	text-align : right;
+  visibility: hidden;
+}
+
+#epreuves li {
+	width : 160px;
+	margin-top : 8vh;
+	margin-bottom : 8vh;
+}

@@ -1,0 +1,51 @@
+.js-third-challenge {
+    opacity: 1;
+    visibility: hidden;
+    color: white;
+    font-family: westeindeCaptionThin;
+}
+
+.js-third-challenge-interactions {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.js-third-challenge-letter {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: westeindeCaptionBold;
+}
+
+.js-third-challenge-interaction {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.js-third-challenge-checkpointText {
+    position: absolute;
+    left: 90%;
+    bottom: 5%;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media all and (max-width: 1200px) {
+    .js-third-challenge-letter { font-size: 20px}
+    .js-third-challenge-interaction { font-size: 10px}
+}
+
+@media all and (max-width: 1024px) {
+    .js-third-challenge-letter { font-size: 16px}
+    .js-third-challenge-interaction { font-size: 8px}
+}
+
+@media all and (max-width: 768px) {
+    .js-third-challenge-letter { font-size: 14px}
+    .js-third-challenge-interaction { font-size: 7px}
+}

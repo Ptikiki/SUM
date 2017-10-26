@@ -1,0 +1,22 @@
+.js-first-challenge-next {
+    position: absolute;
+    z-index: 5;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 13%;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.js-first-challenge-next a {
+    text-decoration: none;
+    color: white;
+    font-family: westeindeCaptionThin;
+    text-transform: uppercase;
+}
+
+.nextImg {
+    margin-top: 5%;
+}

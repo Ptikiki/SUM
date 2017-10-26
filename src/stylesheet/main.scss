@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "westeindeCaptionThin";
+  src: url('http://localhost:8080/assets/fonts/westeindeCaptionThin.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "westeindeCaptionBold";
+  src: url('http://localhost:8080/assets/fonts/westeindeCaptionBold.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "brownBold";
+  src: url('http://localhost:8080/assets/fonts/brownBold.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "brownLight";
+  src: url('http://localhost:8080/assets/fonts/brownLight.otf');
+  font-style: normal;
+}
+
+
+body {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+ }
+
+ .webGLRenderer.hidden, .canvasRenderer.hidden  {
+   display: none;
+ }
+
+ .begining-container {
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url('http://localhost:8080/assets/global/sum-cover.png');
+   background-size: cover;
+   background-position: center;
+ }
+
+.js-conclusion-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 85vh;
+  visibility: hidden;
+  opacity: 0;
+  padding-top:0;
+}
+
+.js-conclusion-p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -60%);
+  margin: 0;
+  color: white;
+  font-size: 36px;
+  line-height: 46px;
+  font-family: brownBold;
+  text-align: center;
+}
+
+
+.js-launch-exp-button {
+  position: absolute;
+  left : 50%;
+  top : 88vh;
+  transform : translate(-50%, 0);
+  width: 35%;
+  color: white;
+  text-align : center;
+  font-family : brownLight;
+  font-size : 18px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left : 50%;
+    bottom : -17px;
+    transform : translate(-50%, 0);
+    width: 10%;
+    color: white;
+    border: solid white 0.1px;
+    cursor: pointer;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+  }
+}
+
+.js-video-button {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left : 50%;
+  top : 88vh;
+  transform : translate(-50%, 0);
+  width: 35%;
+  color: white;
+  text-align : center;
+  font-family : brownLight;
+  font-size : 18px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left : 50%;
+    bottom : -17px;
+    transform : translate(-50%, 0);
+    width: 10%;
+    color: white;
+    border: solid white 0.1px;
+    cursor: pointer;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+  }
+}
+
+.js-launch-exp-button:hover:after, .js-video-button:hover:after {
+    width: 20%;
+}
+
+
+.js-first-recompense-button {
+  position: absolute;
+  left : 50%;
+  bottom : 2%;
+  transform : translate(-50%, 0);
+  width: 35%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align : center;
+  font-family : brownLight;
+  font-size : 18px;
+  cursor: pointer;
+}
+.js-first-recompense-button-underLine {
+  position: absolute;
+  left : 50%;
+  bottom : 0;
+  transform : translate(-50%, 0);
+  width: 7%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  border: solid white 0.1px;
+  cursor: pointer;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+}
+
+.js-introduction-challenge-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height:75%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-introduction-challenge-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.js-introduction-challenge-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: westeindeCaptionThin;
+  text-align: center;
+  color: #FFFFFF;
+
+  .acte {
+    font-size: 34px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .title1, .title2 {
+    font-size: 70px;
+    font-weight: lighter;
+    display: block;
+  }
+}
+
+.js-introduction-challenge-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height:75%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-introduction-challenge-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.js-introduction-challenge-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: westeindeCaptionThin;
+  text-align: center;
+  color: #FFFFFF;
+
+  .test1 {
+    font-size: 34px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .test2, .test3 {
+    font-size: 70px;
+    font-weight: lighter;
+    display: block;
+  }
+}

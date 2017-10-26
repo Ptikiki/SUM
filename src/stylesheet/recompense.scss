@@ -1,0 +1,57 @@
+.first-recompense, .second-recompense, .third-recompense { display : none; opacity : 0; width: 100vw; height: 100vh; position: relative; background-position: center center; background-size: cover; }
+.first-recompense { background-image : url('/assets/first-challenge/fond-recompense-1.png'); }
+.second-recompense { background-image : url('/assets/second-challenge/fond-recompense-2.png'); }
+.third-recompense { background-image : url('/assets/third-challenge/fond-recompense-3.png'); }
+
+.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { position: absolute; transform: scale(1); left: 50%; top: 50%; }
+
+.first-recompense-path, .second-recompense-path, .third-recompense-path { display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+.path { fill: none; stroke: #FFFFFF; stroke-width: 2; }
+
+.first_path_cercle1, .first_path_cercle2, .first_path_cercle3, .first_path_cercle4 { stroke-dasharray: 5,25; stroke-dashoffset: 1000; animation: dash 10s linear infinite; }
+.second_path_cercle1, .second_path_cercle2, .second_path_cercle3, .second_path_cercle4 { stroke-dasharray: 25,20; stroke-dashoffset: 1000; animation: dash 10s linear infinite; }
+.third_path_cercle1, .third_path_cercle2, .third_path_cercle3, .third_path_cercle4 { stroke-dasharray: 80,3; stroke-dashoffset: 1000; animation: dash 10s linear infinite; }
+
+
+@keyframes dash {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+
+/*---------------MEDIA QUERIES----------------------*/
+
+/*svg { transition: fill .1s ease-out, opacity .1s ease-out; }*/
+
+@media all and (max-width: 2800px) {
+	.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(1.6); }
+}
+
+@media all and (max-width: 2500px) {
+	.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(1.4); }
+}
+
+@media all and (max-width: 2200px) {
+	.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(1.2); }
+}
+
+@media all and (max-width: 1920px) {
+	.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(1); }
+}
+
+@media all and (max-width: 1600px) {
+	.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(0.8); }
+}
+
+@media all and (max-width: 1200px) {
+	.first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(0.6); }
+}
+
+@media all and (max-width: 1024px) {
+    .first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(0.5); }
+}
+
+@media all and (max-width: 768px) {
+    .first-recompense-scale, .second-recompense-scale, .third-recompense-scale { transform: scale(0.4); }
+}
